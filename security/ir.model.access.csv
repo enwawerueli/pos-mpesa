@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_pos_mpesa_config_user,pos_mpesa.config.user,model_pos_mpesa_config,point_of_sale.group_pos_user,1,0,0,0
+access_pos_mpesa_config_manager,pos_mpesa.config.manager,model_pos_mpesa_config,point_of_sale.group_pos_manager,1,1,1,1
+access_pos_mpesa_payment_user,pos_mpesa.payment.user,model_pos_mpesa_payment,point_of_sale.group_pos_user,1,0,0,0
+access_pos_mpesa_payment_manager,pos_mpesa.payment.manager,model_pos_mpesa_payment,point_of_sale.group_pos_manager,1,0,0,0

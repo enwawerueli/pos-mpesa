@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <menuitem
+      id="pos_mpesa_menu_config"
+      name="Mpesa Configuration"
+      parent="point_of_sale.menu_point_config_product"
+      action="pos_mpesa.pos_mpesa_action_config"
+      sequence="10"/>
+  <menuitem
+      id="pos_mpesa_menu_payments"
+      name="Mpesa Payments"
+      parent="point_of_sale.menu_point_of_sale"
+      action="pos_mpesa.pos_mpesa_action_mpesa_payments"
+      sequence="5"/>
+</odoo>

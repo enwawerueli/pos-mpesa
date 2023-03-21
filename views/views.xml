@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <record id="pos_mpesa_config_view_form" model="ir.ui.view">
+    <field name="name">pos_mpesa.config.view.form</field>
+    <field name="model">pos_mpesa.config</field>
+    <field name="arch" type="xml">
+      <form>
+        <sheet>
+          <group expand="0">
+            <field name="name"/>
+            <field name="business_short_code"/>
+            <field name="account_reference"/>
+            <field name="transaction_desc"/>
+            <field name="pass_key"/>
+            <field name="consumer_key"/>
+            <field name="consumer_secret"/>
+            <field name="environment"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="pos_payment_method_view_form_inherit" model="ir.ui.view">
+    <field name="name">point_of_sale.payment.method.view.form.inherit</field>
+    <field name="model">pos.payment.method</field>
+    <field name="inherit_id" ref="point_of_sale.pos_payment_method_view_form"/>
+    <field name="arch" type="xml">
+      <field name="use_payment_terminal" position="after">
+        <field name="config_id"/>
+      </field>
+    </field>
+  </record>
+
+  <record id="pos_mpesa_payment_view_tree" model="ir.ui.view">
+    <field name="name">pos_mpesa.payment.view.tree</field>
+    <field name="model">pos_mpesa.payment</field>
+    <field name="arch" type="xml">
+      <tree create="0" edit="0">
+        <field name="mpesa_receipt_number"/>
+        <field name="phone_number"/>
+        <field name="amount"/>
+        <field name="transaction_date"/>
+      </tree>
+    </field>
+  </record>
+</odoo>

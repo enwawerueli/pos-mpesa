@@ -1,0 +1,20 @@
+.pos .popup.popup-success {
+    background-color: #DDEBDD;
+    color: #5E5E5E;
+    box-shadow: 0px 10px 20px #B8B8B8;
+}
+.pos .popup.popup-success .title {
+    color: white;
+    background: #6EC89B;
+}
+.pos .popup.payment-request-popup .input-field {
+    padding: .5rem 0;
+}
+
+.pos .popup.payment-request-popup .input-field label {
+    display: block;
+}
+
+.pos .popup.payment-request-popup .input-field textarea {
+    width: 75%;
+}

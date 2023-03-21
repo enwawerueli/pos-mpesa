@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <record id="pos_mpesa_action_config" model="ir.actions.act_window">
+    <field name="name">Mpesa Configuration</field>
+    <field name="res_model">pos_mpesa.config</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="pos_mpesa_action_mpesa_payments" model="ir.actions.act_window">
+    <field name="name">Mpesa</field>
+    <field name="res_model">pos_mpesa.payment</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="view_mode">tree</field>
+  </record>
+</odoo>
